@@ -1,2 +1,30 @@
-# cloud-file-storage-manager
-Developed a Cloud File Storage Manager using Django REST Framework and React that allows users to upload, manage, and securely share files stored on AWS S3. Implemented JWT authentication, role-based access control, file search functionality, and secure sharing links to simulate a Google Drive-like cloud storage system.
+# Cloud File Storage Manager (Google Drive Clone)
+
+## 🚀 Project Overview
+A cloud-based file storage system where users can upload, manage, share, and download files securely using AWS S3.
+
+## 🛠️ Tech Stack
+- Backend: Django, Django REST Framework
+- Frontend: React
+- Authentication: JWT
+- Cloud Storage: AWS S3
+- Database: SQLite (Dev), PostgreSQL (Prod)
+
+## 🔐 Features
+- User authentication (JWT)
+- Upload files to AWS S3
+- Download & delete files
+- Share files via links
+- Role-based permissions
+- Search files
+
+## 🏗️ Architecture
+React → Django REST API → AWS S3 → Database
+
+## 🎯 Why This Project?
+- Demonstrates cloud integration
+- Real-world production architecture
+- Internship & job ready
+
+## 📌 Status
+🚧 In development
