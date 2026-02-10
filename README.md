@@ -8,7 +8,7 @@ A cloud-based file storage system where users can upload, manage, share, and dow
 - Frontend: React
 - Authentication: JWT
 - Cloud Storage: AWS S3
-- Database: SQLite (Dev), PostgreSQL (Prod)
+- Database: PostgreSQL (Prod)
 
 ## 🔐 Features
 - User authentication (JWT)
