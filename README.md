@@ -1,30 +1,88 @@
-# Cloud File Storage Manager (Google Drive Clone)
+# ☁️ Cloud File Storage Manager (Google Drive Clone)
 
 ## 🚀 Project Overview
-A cloud-based file storage system where users can upload, manage, share, and download files securely using AWS S3.
+Cloud File Storage Manager is a backend-driven cloud storage system where users can securely upload, manage, and share files using AWS S3 as storage and PostgreSQL as the database.
+
+This project demonstrates production-level backend architecture including authentication, authorization, and role-based access control.
+
+---
 
 ## 🛠️ Tech Stack
-- Backend: Django, Django REST Framework
-- Frontend: React
-- Authentication: JWT
-- Cloud Storage: AWS S3
-- Database: PostgreSQL (Prod)
 
-## 🔐 Features
-- User authentication (JWT)
-- Upload files to AWS S3
-- Download & delete files
-- Share files via links
-- Role-based permissions
-- Search files
+### Backend
+- Django
+- Django REST Framework
+- PostgreSQL
+- JWT Authentication (SimpleJWT)
+
+### Cloud
+- AWS S3 (Upcoming Integration)
+
+### Tools
+- Postman (API Testing)
+- Git & GitHub
+
+---
+
+## 🔐 Authentication & Authorization
+
+- Custom email-based user model
+- JWT authentication (Access + Refresh tokens)
+- Protected APIs using Bearer token
+- Role-Based Access Control (Admin / User)
+- Custom permission classes
+- Admin-only endpoints
+
+---
+
+## 📁 File System Design
+
+### File Model Fields:
+- Owner (ForeignKey to User)
+- File Name
+- File Size
+- S3 Key
+- S3 URL
+- Public / Private toggle
+- Upload timestamp
+
+---
 
 ## 🏗️ Architecture
-React → Django REST API → AWS S3 → Database
+
+Client (React - upcoming)
+        ↓
+Django REST API
+        ↓
+PostgreSQL (metadata)
+        ↓
+AWS S3 (file storage)
+
+---
+
+## 📌 Current Status
+
+✅ Backend authentication system completed  
+✅ Role-based access control implemented  
+✅ Admin-restricted APIs working  
+✅ File database structure created  
+🚧 File upload APIs in progress  
+🚧 AWS S3 integration upcoming  
+
+---
 
 ## 🎯 Why This Project?
-- Demonstrates cloud integration
-- Real-world production architecture
-- Internship & job ready
 
-## 📌 Status
-🚧 In development
+This project demonstrates:
+
+- Real-world backend architecture
+- Secure stateless authentication
+- Role-based permission systems
+- Cloud storage integration
+- Industry-level REST API design
+
+---
+
+## 👨‍💻 Author
+
+Izharul Hassan
